@@ -8,6 +8,8 @@ import {
    import {
      productListReducer,
      productDetailsReducer,
+     productReviewCreateReducer,
+     productTopRatedReducer,
    } from "./reducers/productReducers";
    
    import { cartReducer } from "./reducers/cartReduers";
@@ -26,17 +28,19 @@ import {
    } from "./reducers/orderReducers";
    
    const reducer = combineReducers({
-     productList: productListReducer,
-     productDetails: productDetailsReducer,
-     cart: cartReducer,
-     userLogin: userLoginReducer,
-     userRegister: userRegisterReducer,
-     userDetails: userDetailsReducer,
-     userUpdateProfile: updateUserProfileReducer,
-     orderCreate: orderCreateReducer,
-     orderDetails: orderDetailsReducer,
-     orderPay: orderPayReducer,
-     orderListMy: orderListMyReducer,
+    productList: productListReducer,
+    productDetails: productDetailsReducer,
+    cart: cartReducer,
+    userLogin: userLoginReducer,
+    userRegister: userRegisterReducer,
+    userDetails: userDetailsReducer,
+    userUpdateProfile: updateUserProfileReducer,
+    orderCreate: orderCreateReducer,
+    orderDetails: orderDetailsReducer,
+    orderPay: orderPayReducer,
+    orderListMy: orderListMyReducer,
+    productReviewCreate: productReviewCreateReducer,
+    productTopRated: productTopRatedReducer,
    });
    
    const cartItemsFromStorage = localStorage.getItem("cartItems")

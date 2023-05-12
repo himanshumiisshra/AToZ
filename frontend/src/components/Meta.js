@@ -12,7 +12,7 @@ function Meta({ title, description, keywords }) {
 }
 
 Meta.defaultProps = {
-  title: "Welcome To CyberShop",
+  title: "Welcome To AToZ",
   keywords: "electronics, buy electronics, cheap electronics",
   description: "We Sell the best products at cheap prices",
 };
