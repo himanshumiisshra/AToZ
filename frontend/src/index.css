@@ -1,0 +1,162 @@
+Skip to content
+Product
+Solutions
+Open Source
+Pricing
+Search
+Sign in
+Sign up
+gauravmnjwr
+/
+CyberShop_MERN
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+CyberShop_MERN/frontend/src/index.css
+@gauravmnjwr
+gauravmnjwr deployment ready
+Latest commit 6f8a0f7 15 hours ago
+ History
+ 1 contributor
+108 lines (93 sloc)  1.44 KB
+ 
+
+main {
+  min-height: 80vh;
+}
+
+h3 {
+  padding-top: 1rem;
+}
+.rating span {
+  margin: 0.1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+}
+
+.image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel img {
+  height: 400px;
+  padding: 30px;
+
+  margin: 40px;
+  border-radius: 30%;
+}
+.carousel a {
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  border-radius: 30% !important;
+}
+.carousel {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.easy_login {
+  background-color: #383c41;
+  color: white;
+  position: absolute;
+  height: 140px;
+  padding-top: 10px;
+  width: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+  border-radius: 25px;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.easy_login:hover {
+  background-color: #4d4f51;
+}
+
+@media only screen and (max-width: 1000px) {
+  .easy_login {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0%;
+    margin: auto;
+  }
+}
+
+.footer-row {
+  font-size: 12px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* 
+
+main {
+    min-height: 80vh;
+}
+
+h3 {
+        padding: 1rem 0;
+}
+
+
+h1 {
+    font-size: 1.8rem;
+    padding:  1rem 0;
+}
+
+h2 {
+    font-size: 1.4rem;
+    padding:  0.5rem 0;
+}
+.rating span {
+    margin: 0.1rem;
+} */
