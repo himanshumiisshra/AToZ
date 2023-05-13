@@ -12,6 +12,7 @@ import CheckoutSteps from "../components/CheckoutSteps";
 import { useParams } from "react-router-dom";
 import { ORDER_PAY_RESET } from "../constants/orderConstants";
 import Meta from "../components/Meta";
+import { BASE_URL } from "../helper/helper";
 
 function OrderScreen() {
   // const dispatch = useDispatch();
@@ -39,7 +40,7 @@ function OrderScreen() {
 
   useEffect(() => {
     const addPayPalScript = async () => {
-      const { data: clientId } = await axios.get("/api/config/paypal");
+      const { data: clientId } = await axios.get(`${BASE_URL}/api/config/paypal`);
       const script = document.createElement("script");
       script.type = "text/javascript";
       script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`;

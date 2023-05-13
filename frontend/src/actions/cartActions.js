@@ -6,9 +6,10 @@ import {
   CART_SAVE_PAYMENT_METHOD,
 } from "../constants/cartConstants";
 import store from "../store";
+import { BASE_URL } from "../helper/helper";
 
 export const addToCart = (id, qty) => async (dispatch, getState) => {
-  const { data } = await axios.get(`/api/products/${id}`);
+  const { data } = await axios.get(`${BASE_URL}/api/products/${id}`);
   console.log(data, store.getState());
 
   dispatch({

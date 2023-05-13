@@ -13,13 +13,14 @@ import {
   PRODUCT_TOP_SUCCESS,
   PRODUCT_TOP_FAIL,
 } from "../constants/productConstants";
+import { BASE_URL } from "../helper/helper";
 
 export const listProducts =
   (keyword = "") =>
   async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_LIST_REQUEST });
-      const { data } = await axios.get(`/api/products?keyword=${keyword}`);
+      const { data } = await axios.get(`${BASE_URL}/api/products?keyword=${keyword}`);
       dispatch({
         type: PRODUCT_LIST_SUCCESS,
         payload: data,
@@ -35,7 +36,7 @@ export const listProducts =
 export const listProductDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_DETAILS_REQUEST });
-    axios.get(`/api/products/${id}`).then((response) => {
+    axios.get(`${BASE_URL}/api/products/${id}`).then((response) => {
       dispatch({
         type: PRODUCT_DETAILS_SUCCESS,
         payload: response.data,
@@ -66,7 +67,7 @@ export const createProductReview =
       };
 
       const { data } = await axios.post(
-        `/api/products/${productId}/reviews`,
+        `${BASE_URL}/api/products/${productId}/reviews`,
         review,
         config
       );
@@ -86,7 +87,7 @@ export const listTopProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_TOP_REQUEST });
 
-    const { data } = await axios.get(`/api/products/top`);
+    const { data } = await axios.get(`${BASE_URL}/api/products/top`);
 
     dispatch({
       type: PRODUCT_TOP_SUCCESS,
