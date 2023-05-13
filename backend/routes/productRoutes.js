@@ -7,7 +7,7 @@ import {
   getProducts,
   createProductReview,
   getTopProducts,
-} from "../controllers/productController.js";
+} from "../controllers/ProductController.js";
 
 router.route("/").get(getProducts);
 router.get("/top", getTopProducts);
