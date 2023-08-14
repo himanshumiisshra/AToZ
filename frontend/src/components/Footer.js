@@ -27,8 +27,6 @@ function Footer() {
               Github Repository
             </a>
           </Col>
-
-        
         </Row>
 
         <Row>

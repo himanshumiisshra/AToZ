@@ -20,7 +20,9 @@ export const listProducts =
   async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_LIST_REQUEST });
-      const { data } = await axios.get(`${BASE_URL}/api/products?keyword=${keyword}`);
+      const { data } = await axios.get(
+        `${BASE_URL}/api/products?keyword=${keyword}`
+      );
       dispatch({
         type: PRODUCT_LIST_SUCCESS,
         payload: data,
