@@ -1,1 +1,1 @@
-export const BASE_URL = "https://atoz-j2fj.onrender.com"
+export const BASE_URL = "https://a-to-z-one.vercel.app"

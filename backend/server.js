@@ -9,6 +9,7 @@ import orderRoutes from "./routes/orderRoutes.js";
 import morgan from "morgan";
 import path from "path";
 import cors from "cors";
+app.use(cors())
 
 const corsOptions = {
   origin: "*",
